@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Server Builder Bot</title>
+<style>
+  :root{
+    --ink:#1C2333;
+    --ink-soft:#4A5268;
+    --bg:#F6F5F1;
+    --line:#DCD8CC;
+    --accent:#B8873D;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    line-height:1.65;
+    font-size:16px;
+  }
+  .wrap{ max-width:680px; margin:0 auto; padding:72px 24px 96px; }
+  .back{
+    display:inline-block;
+    font-size:13px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    margin-bottom:32px;
+  }
+  .back:hover{ color:var(--accent); }
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:600;
+    margin:0 0 12px;
+  }
+  h1{
+    font-family:'Source Serif 4',Georgia,serif;
+    font-size:34px;
+    line-height:1.15;
+    margin:0 0 8px;
+    font-weight:700;
+  }
+  .updated{
+    color:var(--ink-soft);
+    font-size:14px;
+    margin:0 0 48px;
+  }
+  section{
+    margin-bottom:40px;
+    padding-left:44px;
+    position:relative;
+  }
+  section .num{
+    position:absolute;
+    left:0;
+    top:2px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px;
+    font-weight:500;
+    color:var(--accent);
+    width:28px;
+  }
+  h2{
+    font-family:'Source Serif 4',Georgia,serif;
+    font-size:19px;
+    font-weight:600;
+    margin:0 0 10px;
+  }
+  p, li{
+    color:var(--ink-soft);
+    font-size:15px;
+    margin:0 0 12px;
+  }
+  ul{ margin:0 0 12px; padding-left:20px; }
+  strong{ color:var(--ink); font-weight:600; }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:0 0 16px;
+    font-size:14px;
+  }
+  th, td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--line);
+    color:var(--ink-soft);
+    vertical-align:top;
+  }
+  th{
+    color:var(--ink);
+    font-weight:600;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+  }
+  .placeholder{
+    background:#FBF1DE;
+    color:#8A6A1E;
+    padding:1px 6px;
+    border-radius:4px;
+    font-size:14px;
+  }
+  .note{
+    background:#FBF1DE;
+    border:1px solid #EBD9AE;
+    border-radius:8px;
+    padding:14px 16px;
+    font-size:14px;
+    color:#7A5C17;
+    margin:0 0 16px;
+  }
+  hr{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:48px 0 40px;
+  }
+  .contact{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:24px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Back</a>
+  <p class="eyebrow">Legal · Server Builder Bot</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: August 19, 2026</p>
+
+  <section>
+    <span class="num">01</span>
+    <h2>Overview</h2>
+    <p>This Privacy Policy explains what information the Server Builder Bot ("the Bot") collects when it is added to a Discord server or used via its commands, and how that information is used. By using the Bot, you agree to the practices described here.</p>
+  </section>
+
+  <section>
+    <span class="num">02</span>
+    <h2>Information we collect</h2>
+    <p>When the setup command is used, the Bot may process the following:</p>
+    <table>
+      <tr><th>Data</th><th>Source</th></tr>
+      <tr><td>Discord server (guild) ID</td><td>Automatically, from Discord</td></tr>
+      <tr><td>Discord user ID of the person running the command</td><td>Automatically, from Discord</td></tr>
+      <tr><td>Server type, language choice, role names, channel names, forum counts, and voice-channel limits</td><td>Manually entered by the Server Owner/Admin in the setup menus and forms</td></tr>
+    </table>
+    <p>We do not collect message content, attachments, or any data from channels the Bot has not been explicitly asked to create or configure.</p>
+  </section>
+
+  <section>
+    <span class="num">03</span>
+    <h2>How we store this information</h2>
+    <div class="note">Currently, setup choices (server type, language, and form answers) are held only in temporary memory for the duration of the setup wizard and are discarded automatically once the server structure is created or the bot restarts — nothing is written to a database today.</div>
+    <p>We plan to introduce a database in a future update, so that the Bot can, for example, remember a server's preferred template or let admins re-run a setup with previous answers pre-filled. Once introduced, that database will store only: the guild ID, the user ID of the admin who ran the command, the chosen server type and language, and the configuration values submitted in the setup forms (role/channel names, counts, and limits). This Privacy Policy will be updated with the database provider and retention period before that feature is enabled.</p>
+  </section>
+
+  <section>
+    <span class="num">04</span>
+    <h2>How we use information</h2>
+    <ul>
+      <li>To create and configure roles, categories, channels, and forums as requested;</li>
+      <li>To operate, maintain, and improve the Bot;</li>
+      <li>Once introduced, to let a server reuse or resume a previous setup configuration.</li>
+    </ul>
+    <p>We do not sell personal information, and we do not use collected data for advertising.</p>
+  </section>
+
+  <section>
+    <span class="num">05</span>
+    <h2>Data retention</h2>
+    <p>In-memory setup sessions are cleared automatically once a setup completes or the Bot restarts. Any data stored in the future database will be retained only for as long as needed to provide the features described above, or until a Server Owner/Admin requests deletion (see Section 9), or until the Bot is removed from the relevant server.</p>
+  </section>
+
+  <section>
+    <span class="num">06</span>
+    <h2>Sharing of information</h2>
+    <p>We do not share, sell, or rent collected information to third parties. Information may be disclosed only:</p>
+    <ul>
+      <li>To Discord, as necessary for the Bot to operate through Discord's API;</li>
+      <li>To our hosting/infrastructure provider, solely to run the Bot and any future database;</li>
+      <li>If required to comply with a legal obligation, court order, or valid governmental request.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="num">07</span>
+    <h2>Security</h2>
+    <p>We take reasonable technical measures to protect the information the Bot processes. However, no method of electronic storage or transmission is completely secure, and we cannot guarantee absolute security.</p>
+  </section>
+
+  <section>
+    <span class="num">08</span>
+    <h2>Children's privacy</h2>
+    <p>The Bot is not directed at children and follows Discord's own minimum age requirements. We do not knowingly collect information from users who do not meet Discord's eligibility requirements.</p>
+  </section>
+
+  <section>
+    <span class="num">09</span>
+    <h2>Your rights</h2>
+    <p>Server Owners/Admins may request access to, correction of, or deletion of data associated with their server by contacting us (Section 11). Removing the Bot from a server does not automatically delete already-created roles or channels, since those become part of the Discord server itself and are managed by Discord, not by us.</p>
+  </section>
+
+  <section>
+    <span class="num">10</span>
+    <h2>Third-party services</h2>
+    <p>The Bot operates on top of Discord. Your use of Discord itself is governed by <a href="https://discord.com/privacy" target="_blank" rel="noopener">Discord's own Privacy Policy</a>, which we encourage you to review.</p>
+  </section>
+
+  <section>
+    <span class="num">11</span>
+    <h2>Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time, particularly when the planned database feature is introduced. Material changes will be reflected by an updated "Last updated" date at the top of this page.</p>
+  </section>
+
+  <hr>
+
+  <div class="contact">
+    <h2 style="margin-bottom:6px;">Contact</h2>
+    <p style="margin-bottom:0;">Questions about this Privacy Policy, or requests regarding your data, can be sent to <span class="placeholder">[your contact email]</span> or via our support server: <span class="placeholder">[support server invite link]</span>.</p>
+  </div>
+</div>
+</body>
+</html>
